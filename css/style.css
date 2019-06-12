@@ -8200,13 +8200,11 @@ h1, h2, h3, h4, h5,
       padding-bottom: 10px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 13px;
-    padding-top: .9rem;
-    padding-bottom: .9rem;
     padding-left: 20px;
     padding-right: 20px;
     letter-spacing: 1px;
     color: #00933E;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     opacity: 1 !important;
     }
@@ -8344,8 +8342,6 @@ h1, h2, h3, h4, h5,
       letter-spacing: .1em;
       }
     .ftco-navbar-light.scrolled .nav-link {
-      padding-top: 0.9rem !important;
-      padding-bottom: 0.9rem !important;
       color: #00933E !important;
       }
       .ftco-navbar-light.scrolled .nav-link.active {
@@ -8698,11 +8694,12 @@ h1, h2, h3, h4, h5,
     font-weight: 500;
     padding: 20px 10px !important;
     color: #000;
-    border: 1px solid transparent !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important; }
+    
     @media (min-width: 768px) {
-      .table tbody tr td:nth-child(odd) {
-        background: #f0f0f0; } }
+      /* .table tbody tr td:nth-child(odd) {
+        background: #f0f0f0; } */
+      } 
     .table tbody tr td.color {
       color: #fff;
       background: #6927ff;
@@ -9009,7 +9006,7 @@ textarea.form-control {
   }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 1em 0;
+      padding: 1em 0px;
       } 
       .sahyogMap{
         width:330px;
@@ -9310,6 +9307,7 @@ textarea.form-control {
 .ftco-section {
   position: relative;
   width: 100%;
+  padding: 1em 15px;
   display: block; }
   .ftco-section .nav-pills p {
     margin-bottom: 0; }
@@ -10072,11 +10070,72 @@ font-size:31px;
   width:600px;
   height:450px;
 }
+.contact-bg{
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(255, 255, 255, 0.65)),url(../images/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+.services-bg{
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.75),rgba(255, 255, 255, 0.75)),url(../images/recycle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.about-bg{
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.75),rgba(255, 255, 255, 0.75)),url(../images/aboutus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.product-bg{
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.75),rgba(43, 43, 43, 0.75)),url(../images/eco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.services-img img{
+  width:100%;
+  height:100%;
+  padding:10px 0px 20px 0px;
+}
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+  font-size: 13px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 147, 62, 0.3);
+    transform: translateY(-5px);
+    border-radius: 25px;
+    letter-spacing: 1px;
+    color: #2ca65f;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 1 !important;
+}
+.heading{
+  position: relative;
+    top: 50%;
+}
+.heading h1{
+  color: #fff;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.Ecoimage{
+  width:100%;
+  height:auto;
+}
 @media (max-width: 767.98px) {
     .sahyogMap{
-      width:330px;
+      width:300px;
       height:450px;
     }
+    .heading {
+      position: relative;
+      top: 25%;
+  }
   
   }
 @-webkit-keyframes loader-rotate {
